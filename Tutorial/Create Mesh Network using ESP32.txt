@@ -1,0 +1,15 @@
+Create Mesh Network using ESP32
+
+1. Atleast, we need 3 ESP32 (better more than 5) to initialize the mesh network.
+2. Open VS Code, install PlatformIO
+3. Create a project (name it whatever by yourself)
+4. Choose the Board --> Espressif ESP32 Dev Module (if you have the another version of ESP32, look for it manually)
+5. Framework --> Arduino
+6. Click "finish" and wait until the project folder show up
+7. Go to "src" folder, place your main.cpp there (u can Copy-Paste the source code from basic.cpp)
+8. Copy "platformio.ini" file contents to your platformio.ini in the project folder
+9. Upload the sketch and done
+
+
+*notes
+1. make sure that all nodes using the same wireless channel (on mesh.init, click Ctrl + Left Mouse Button to open the wifi.hpp file from the painlessmesh library and find the command "uint8_t channel = n")
